@@ -17,7 +17,7 @@ app.engine("hbs", engine({ extname: ".hbs" }));
 app.set("view engine", "hbs");
 app.set("views", "/views");
 app.set("views", path.join(__dirname, "resources/views"));
-// router
+// router app
 router(app);
 // run server
 app.listen(port, () => {
