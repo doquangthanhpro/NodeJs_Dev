@@ -1,3 +1,27 @@
-<div class="flex">
-     home page
-</div>
+<section class="wapper text-center">
+  <div class="container">
+    <div class="row">
+      {{#each Course}}
+        <div class="col-md-4">
+          <div class="card" style="height: 300px;">
+            <img
+              src="{{this.image}}"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px;"
+            />
+            <div class="card-body">
+               <a href="/course/{{this.slug}}">
+              <h5 class="card-title">{{this.name}}</h5>
+               </a>
+              <p class="card-text">
+                {{this.description}}
+              </p>
+              <a href="#" class="btn btn-primary">Mua</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
