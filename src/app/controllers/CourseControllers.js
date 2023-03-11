@@ -6,7 +6,7 @@ class ManagerController {
     Course.findOne({ slug: req.params.slug })
       .then((db) => {
         res.render("course/course",{
-          Course: extraObject(db)
+          Course: (db)
         });
       })
       .catch(next);
