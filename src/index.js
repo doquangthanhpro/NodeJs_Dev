@@ -23,7 +23,7 @@ app.set("views", path.join(__dirname, "resources/views"));
 router(app);
 //connect db
 db.connect();
-// run server
+// run server 
 app.listen(port, () => {
   console.log(`sever to connect http://localhost:${port}`);
 });
